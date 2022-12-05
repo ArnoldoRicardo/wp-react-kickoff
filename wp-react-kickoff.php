@@ -21,7 +21,7 @@ define ( 'WPRK_URL', trailingslashit( plugins_url( '/', __FILE__ ) ) );
  */
 add_action( 'admin_enqueue_scripts', 'load_scripts' );
 function load_scripts() {
-    wp_enqueue_script( 'wp-react-kickoff', WPRK_URL . 'dist/bundle.js', [ 'jquery', 'wp-element' ], wp_rand(), true );
+    wp_enqueue_script( 'wp-react-kickoff', WPRK_URL . 'dist/assets/index.43e1cb1e.js', [ 'jquery', 'wp-element' ], wp_rand(), true );
     wp_localize_script( 'wp-react-kickoff', 'appLocalizer', [
         'apiUrl' => home_url( '/wp-json' ),
         'nonce' => wp_create_nonce( 'wp_rest' ),
